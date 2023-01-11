@@ -20,6 +20,11 @@ body {
 }
 
 .App {
+    margin-top: -20%;
+
+    &__cabecera{
+        margin-bottom: 30px;
+    }
 
     &__titulo {
         width: 100%;
@@ -29,5 +34,6 @@ body {
         color: white;
         letter-spacing: 20px;
     }
+
 
 }

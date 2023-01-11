@@ -10,6 +10,7 @@ const texto = (_data) => {
     let txtInput = document.querySelector('#texto');
 
     txtInput.addEventListener('keyup', (e) => {
+        
         if (e.code === 'Enter' || e.code === 'NumpadEnter') {
             txtInput.value !== "" ? _data(txtInput.value) : console.log("");
             txtInput.value = ""            

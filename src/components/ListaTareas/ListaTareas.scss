@@ -19,24 +19,33 @@
         width: 20px;
         height: 20px;
         border-radius: 50px;
-        background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)); 
-           cursor: pointer;
+        background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
 
     }
-        &__pendientes{
-            width: 90%;
-            height: 90%;
-            border-radius: 50px;
-            background-color: $Very-Dark-Desaturated-Blue;
-            color: white;
-        }        
 
-    &__completada{
+
+
+    &__pendientes {
+        width: 90%;
+        height: 90%;
+        border: gray solid 1px;
+        border-radius: 50px;
+        background-color: $Very-Dark-Desaturated-Blue;
+        color: white;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    &__completada {
         color: white;
     }
+
 
     &__texto {
         color: $Light-Grayish-Blue;
@@ -44,39 +53,50 @@
         text-align: left;
     }
 
-    &__eliminar{
-        color:$Very-Dark-Grayish-Blue;
+    &__eliminar {
+        color: $Very-Dark-Grayish-Blue;
         font-size: 30px;
     }
 
-    &__servicios{
+    &__tachado {
+        text-decoration: line-through;
+        color: $Very-Dark-Grayish-Blue;
+    }
+
+    &__servicios {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 60px;
         color: $Very-Dark-Grayish-Blue;
+
+        p {
+            cursor: default;
+        }
     }
 
-    &__botones{
+    &__botones {
         display: flex;
         gap: 10px;
 
     }
-    button{
+
+    button {
         background-color: transparent;
         border: none;
         font-size: 16px;
         color: $Very-Dark-Grayish-Blue;
+        cursor: pointer;
 
-        &:hover{
+        &:hover {
             transition: 0.5s;
             color: $Light-Grayish-Blue-hover;
         }
 
-        &:focus{
+        &:focus {
             color: blue;
         }
     }
-    
+
 
 }
