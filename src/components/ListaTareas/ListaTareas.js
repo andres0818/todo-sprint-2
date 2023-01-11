@@ -4,7 +4,7 @@ import TareasOk from './Tareas/TareasOk';
 import TareasPendientes from './Tareas/TareasPendientes';
 
 
-const ListaTareas = ({ reiniciarTareasCompletadas,eliminarTarea, eliminarTareaCompletada, almacenarTareaCompletada, tarea, tareaOk }) => {
+const ListaTareas = ({ noTareaCompletada,reiniciarTareasCompletadas,eliminarTarea, eliminarTareaCompletada, almacenarTareaCompletada, tarea, tareaOk }) => {
     return (
 
         <div className='ListaTareas'>
@@ -15,6 +15,7 @@ const ListaTareas = ({ reiniciarTareasCompletadas,eliminarTarea, eliminarTareaCo
             />
             <TareasOk
                 eliminarTareaCompletada={eliminarTareaCompletada}
+                noTareaCompletada={noTareaCompletada}    
                 tareaOk={tareaOk}
             />
             <div className='ListaTareas__servicios'>

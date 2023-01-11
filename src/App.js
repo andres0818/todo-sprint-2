@@ -16,7 +16,6 @@ const App = () => {
     setTarea(
       tarea = [...tarea, _data]
     )
-    console.log(tarea);
   }
 
   const EliminarTarea = (_data) => {
@@ -24,14 +23,24 @@ const App = () => {
       tarea = tarea.filter(e => e !== _data)
     )
   }
-  
 
   const TareaCompletada = (_data) => {
+
+    setTareaOk(
+      tareaOk = [...tareaOk, _data]
+    )
     setTarea(
       tarea = tarea.filter(e => e !== _data)
     )
+  }
+
+  const NoTareaCompletada = (_data) => {
+
+    setTarea(
+      tarea = [...tarea, _data]
+    )
     setTareaOk(
-      tareaOk = [...tareaOk, _data]
+      tareaOk = tareaOk.filter(e => e !== _data)
     )
   }
 
@@ -48,11 +57,6 @@ const App = () => {
   }
 
 
-
-
-
-
-
   return (
 
     <div className='App'>
@@ -67,6 +71,7 @@ const App = () => {
         reiniciarTareasCompletadas={ReiniciarTareasCompletadas}
         eliminarTareaCompletada={EliminarTareaCompletada}
         almacenarTareaCompletada={TareaCompletada}
+        noTareaCompletada={NoTareaCompletada}
         eliminarTarea={EliminarTarea}
         tareaOk={tareaOk}
         tarea={tarea}

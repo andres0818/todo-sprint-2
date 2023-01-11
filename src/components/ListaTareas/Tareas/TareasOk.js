@@ -4,13 +4,13 @@ import React from 'react'
 
 
 
-const TareasOk = ({eliminarTareaCompletada,tareaOk}) => {
+const TareasOk = ({noTareaCompletada,eliminarTareaCompletada,tareaOk}) => {
   return (
     tareaOk.map((e,index) => {
         return (
 
             <div key={index} className='ListaTareas__contenedor'>
-                <span className='ListaTareas__boton'>
+                <span onClick={()=>noTareaCompletada(e)} className='ListaTareas__boton'>
                     <span className='ListaTareas__completada'>✓</span>
                 </span>
                 <p className='ListaTareas__texto ListaTareas__tachado'>{e}</p>
