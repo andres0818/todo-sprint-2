@@ -22,17 +22,34 @@ body {
 .App {
     margin-top: -20%;
 
-    &__cabecera{
+    &__cabecera {
         margin-bottom: 30px;
     }
 
+    &__diaNoche {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+
     &__titulo {
-        width: 100%;
         font-size: 60px;
         margin-bottom: 40px;
         text-align: left;
         color: white;
         letter-spacing: 20px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        color: $Very-Dark-Grayish-Blue;
     }
 
 
