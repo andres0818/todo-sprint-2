@@ -1,0 +1,18 @@
+@import "../../sass/stile";
+
+.formulario{
+    background-color: $Very-Dark-Desaturated-Blue;
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.formulario::placeholder{
+    color: white;   
+    font-size: 16px;
+    padding: 0 42px; 
+}
