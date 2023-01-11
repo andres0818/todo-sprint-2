@@ -2,25 +2,26 @@ import React from 'react'
 import './Formulario.scss'
 
 
-let tareas = []
 
-const texto = () => {
+
+
+const texto = (_data) => {
+
     let txtInput = document.querySelector('#texto');
 
     txtInput.addEventListener('keyup', (e) => {
         if (e.code === 'Enter' || e.code === 'NumpadEnter') {
-
-            txtInput.value !== "" ? tareas.push(txtInput.value) : console.log("");
-            txtInput.value = ""
+            txtInput.value !== "" ? _data(txtInput.value) : console.log("");
+            txtInput.value = ""            
         }
     });
 }
 
-const Formulario = () => {
+const Formulario = ({ almacenarTarea }) => {
 
     return (
         <>
-            <input onClick={texto} className='formulario' id="texto" type='text' placeholder='Currently typing' />
+            <input onClick={()=>texto(almacenarTarea)} className='formulario' id="texto" type='text' placeholder='Currently typing' />
 
         </>
     )

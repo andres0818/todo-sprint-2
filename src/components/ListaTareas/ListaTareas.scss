@@ -1,0 +1,82 @@
+@import '../../sass/stile.scss';
+
+
+.ListaTareas {
+    padding: 10px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: $Very-Dark-Desaturated-Blue;
+
+    &__contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid $Very-Dark-Grayish-Blue 0.1px;
+        padding: 10px;
+    }
+
+    &__boton {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)); 
+           cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+        &__pendientes{
+            width: 90%;
+            height: 90%;
+            border-radius: 50px;
+            background-color: $Very-Dark-Desaturated-Blue;
+            color: white;
+        }        
+
+    &__completada{
+        color: white;
+    }
+
+    &__texto {
+        color: $Light-Grayish-Blue;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    &__eliminar{
+        color:$Very-Dark-Grayish-Blue;
+        font-size: 30px;
+    }
+
+    &__servicios{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        color: $Very-Dark-Grayish-Blue;
+    }
+
+    &__botones{
+        display: flex;
+        gap: 10px;
+
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        color: $Very-Dark-Grayish-Blue;
+
+        &:hover{
+            transition: 0.5s;
+            color: $Light-Grayish-Blue-hover;
+        }
+
+        &:focus{
+            color: blue;
+        }
+    }
+    
+
+}
