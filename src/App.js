@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Formulario from './components/Formulario/Formulario'
 import ListaTareas from './components/ListaTareas/ListaTareas'
+import DiaNoche from './components/DiaNoche/DiaNoche'
 import './App.scss'
-import sol from './img/sun.png'
 
 
 
@@ -63,7 +63,7 @@ const App = () => {
       <div className='App__cabecera'>
         <div className='App__diaNoche'>
           <h1 className='App__titulo'>TODO</h1>
-          <img src={sol} alt='' />
+          <DiaNoche/>
         </div>
         <Formulario almacenarTarea={AlmacenarTarea} />
       </div>

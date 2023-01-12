@@ -5,14 +5,14 @@ import './Formulario.scss'
 
 
 
-const texto = (_data) => {
+const texto = (almacenarTarea) => {
 
     let txtInput = document.querySelector('#texto');
 
     txtInput.addEventListener('keyup', (e) => {
         
         if (e.code === 'Enter' || e.code === 'NumpadEnter') {
-            txtInput.value !== "" ? _data(txtInput.value) : console.log("");
+            txtInput.value !== "" ? almacenarTarea(txtInput.value) : console.log("");
             txtInput.value = ""            
         }
     });
@@ -21,10 +21,10 @@ const texto = (_data) => {
 const Formulario = ({ almacenarTarea }) => {
 
     return (
-        <>
-            <input onClick={()=>texto(almacenarTarea)} className='formulario' id="texto" type='text' placeholder='Currently typing' />
+        <div className='circle'>
+            <input  onClick={()=>texto(almacenarTarea)} className='formulario' id="texto" type='text' placeholder='Currently typing' />
 
-        </>
+        </div>
     )
 }
 

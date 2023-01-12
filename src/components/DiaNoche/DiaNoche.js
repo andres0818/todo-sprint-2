@@ -1,0 +1,91 @@
+import React from 'react'
+import './DiaNoche.scss'
+import fondoNoche from '../../img/fondo.png'
+import fondoDia from '../../img/dia.png'
+
+
+
+
+
+
+
+
+const DiaNoche = () => {
+
+    const validarCheckbox = () => {
+
+        const checkbox = document.getElementById('checkbox')
+        checkbox.addEventListener('change', estado)
+
+
+
+        function estado() {
+            if (checkbox.checked === true) {
+                const dia = document.querySelector('body')
+                dia.setAttribute(
+                    'style',
+                    `background-image:url(${fondoDia})`,
+                    'backgroundSize :cover'
+                )
+
+                const colorFormulario = document.querySelector('.formulario')
+                colorFormulario.setAttribute(
+                    'style',
+                    "background-color: white"
+                )
+
+
+                const colorLista = document.querySelector('.ListaTareas')
+                console.log(colorLista);
+                colorLista.setAttribute(
+                    'style',
+                    "background-color: white"
+                    )
+
+                const texto = document.querySelectorAll('.ListaTareas__texto')
+                texto.forEach(e =>
+                    e.setAttribute(
+                        'style',
+                        "color:black",
+                        "background:red"
+                    )
+                )
+                const checkedTarea = document.querySelectorAll('.ListaTareas__pendientes')
+                checkedTarea.forEach(e =>
+                    e.setAttribute(
+                        'style',
+                        "background-color: white",
+                    )
+                )
+            }
+            else {
+                const noche = document.querySelector('body')
+                noche.setAttribute(
+                    'style',
+                    `background-image:url(${fondoNoche})`,
+                    'backgroundSize :cover'
+                )
+                const colorFormulario = document.querySelector('.formulario')
+                colorFormulario.setAttribute(
+                    'style',
+                    "box-shadow:none"
+                )
+                const colorLista = document.querySelector('.ListaTareas')
+                colorLista.setAttribute(
+                    'style',
+                    "box-shadow:none"
+                )
+            }
+        }
+    }
+
+
+    return (
+        <label onClick={validarCheckbox} className="content-input">
+            <input id='checkbox' name='checkbox' type="checkbox" />
+            <i></i>
+        </label>
+    )
+}
+
+export default DiaNoche

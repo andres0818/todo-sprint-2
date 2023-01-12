@@ -6,6 +6,8 @@
     width: 500px;
     border-radius: 8px;
     background-color: $Very-Dark-Desaturated-Blue;
+    color: $Light-Grayish-Blue;
+
 
     &__contenedor {
         display: flex;
@@ -35,20 +37,14 @@
         border: gray solid 1px;
         border-radius: 50px;
         background-color: $Very-Dark-Desaturated-Blue;
-        color: white;
 
         &:hover {
             border: none;
         }
     }
 
-    &__completada {
-        color: white;
-    }
-
 
     &__texto {
-        color: $Light-Grayish-Blue;
         font-size: 25px;
         text-align: left;
     }
@@ -60,7 +56,7 @@
 
     &__tachado {
         text-decoration: line-through;
-        color: $Very-Dark-Grayish-Blue;
+        color: $Light-Grayish-Blue;
     }
 
     &__servicios {

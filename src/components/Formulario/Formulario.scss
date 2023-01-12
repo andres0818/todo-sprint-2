@@ -1,18 +1,33 @@
 @import "../../sass/stile";
 
-.formulario{
+.formulario {
     background-color: $Very-Dark-Desaturated-Blue;
     width: 520px;
     height: 60px;
     border-radius: 8px;
     border: none;
-    color: white;
+    color: $Light-Grayish-Blue;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+
+    &::placeholder {
+        color: $Light-Grayish-Blue;
+        font-size: 16px;
+        padding: 0 42px;
+    }
+
 }
-.formulario::placeholder{
-    color: white;   
-    font-size: 16px;
-    padding: 0 42px; 
+.circle::after{
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: solid gray 1px;
+    position: absolute;
+    transform: translate(15px ,-40px);
+    
+    
+    
 }

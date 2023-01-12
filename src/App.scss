@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+ body {
     height: 100vh;
     font-family: 'roboto';
     background-image: url('./img/fondo.png');
@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+ 
 .App {
     margin-top: -20%;
 
@@ -29,17 +29,13 @@ body {
     &__diaNoche {
         display: flex;
         justify-content: space-between;
-
-        img {
-            width: 44px;
-            height: 44px;
-        }
+        align-items: center;
+        margin-bottom: 40px;
     }
 
-
     &__titulo {
+
         font-size: 60px;
-        margin-bottom: 40px;
         text-align: left;
         color: white;
         letter-spacing: 20px;
@@ -54,3 +50,4 @@ body {
 
 
 }
+
