@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todo-sprint-2/static/css/main.901ece8f.css",
+    "main.js": "/todo-sprint-2/static/js/main.3d3bcce5.js",
+    "static/media/dia.png": "/todo-sprint-2/static/media/dia.03a03e352c5d8886a5b7.png",
+    "static/media/fondo.png": "/todo-sprint-2/static/media/fondo.b7c754e45ab68d6d50ba.png",
+    "index.html": "/todo-sprint-2/index.html",
+    "main.901ece8f.css.map": "/todo-sprint-2/static/css/main.901ece8f.css.map",
+    "main.3d3bcce5.js.map": "/todo-sprint-2/static/js/main.3d3bcce5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.901ece8f.css",
+    "static/js/main.3d3bcce5.js"
+  ]
+}
