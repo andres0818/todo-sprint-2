@@ -2,6 +2,8 @@ import React from 'react'
 
 const TareasPendientes = ({eliminarTarea,tarea,almacenarTareaCompletada}) => {
   return (
+    <div className='tareasPendientes'>
+      {
     tarea.map((e,index) => {
         return (
 
@@ -14,7 +16,8 @@ const TareasPendientes = ({eliminarTarea,tarea,almacenarTareaCompletada}) => {
             </div>
 
         )
-    })
+    })}
+    </div>
   )
 }
 

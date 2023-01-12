@@ -16,6 +16,13 @@
         border-bottom: solid $Very-Dark-Grayish-Blue 0.1px;
         padding: 10px;
     }
+     &__tareasOk {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid $Very-Dark-Grayish-Blue 0.1px;
+        padding: 10px;
+    } 
 
     &__boton {
         width: 20px;
@@ -37,6 +44,7 @@
         border: gray solid 1px;
         border-radius: 50px;
         background-color: $Very-Dark-Desaturated-Blue;
+        
 
         &:hover {
             border: none;
@@ -98,4 +106,9 @@
         transition: 0.5s;
         color: $Very-Dark-Blue;
     }
+}
+
+
+.noSeleccionado{
+    display: none;
 }

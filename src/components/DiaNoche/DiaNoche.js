@@ -59,7 +59,6 @@ const DiaNoche = () => {
                     btnServicios.forEach(e=>{
                         e.classList.remove('ListaTareas__hoverNoche')
                         e.classList.add('ListaTareas__hoverDia')
-                        console.log(e);
                     })
 
 
@@ -88,7 +87,6 @@ const DiaNoche = () => {
                     btnServicios.forEach(e=>{
                         e.classList.remove('ListaTareas__hoverDia')
                         e.classList.add('ListaTareas__hoverNoche')
-                        console.log(e);
                     })
 
             }
