@@ -57,13 +57,16 @@ const App = () => {
   }
 
 
+
+
+
   return (
 
     <div className='App'>
       <div className='App__cabecera'>
         <div className='App__diaNoche'>
           <h1 className='App__titulo'>TODO</h1>
-          <DiaNoche/>
+          <DiaNoche />
         </div>
         <Formulario almacenarTarea={AlmacenarTarea} />
       </div>

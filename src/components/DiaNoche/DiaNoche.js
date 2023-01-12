@@ -6,10 +6,6 @@ import fondoDia from '../../img/dia.png'
 
 
 
-
-
-
-
 const DiaNoche = () => {
 
     const validarCheckbox = () => {
@@ -36,11 +32,10 @@ const DiaNoche = () => {
 
 
                 const colorLista = document.querySelector('.ListaTareas')
-                console.log(colorLista);
                 colorLista.setAttribute(
                     'style',
                     "background-color: white"
-                    )
+                )
 
                 const texto = document.querySelectorAll('.ListaTareas__texto')
                 texto.forEach(e =>
@@ -57,6 +52,19 @@ const DiaNoche = () => {
                         "background-color: white",
                     )
                 )
+
+
+
+                    const btnServicios= document.querySelectorAll('.ListaTareas__hoverNoche')
+                    btnServicios.forEach(e=>{
+                        e.classList.remove('ListaTareas__hoverNoche')
+                        e.classList.add('ListaTareas__hoverDia')
+                        console.log(e);
+                    })
+
+
+
+
             }
             else {
                 const noche = document.querySelector('body')
@@ -75,6 +83,14 @@ const DiaNoche = () => {
                     'style',
                     "box-shadow:none"
                 )
+
+                const btnServicios= document.querySelectorAll('.ListaTareas__hoverDia')
+                    btnServicios.forEach(e=>{
+                        e.classList.remove('ListaTareas__hoverDia')
+                        e.classList.add('ListaTareas__hoverNoche')
+                        console.log(e);
+                    })
+
             }
         }
     }

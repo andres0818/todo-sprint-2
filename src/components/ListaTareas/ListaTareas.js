@@ -4,28 +4,48 @@ import TareasOk from './Tareas/TareasOk';
 import TareasPendientes from './Tareas/TareasPendientes';
 
 
-const ListaTareas = ({ noTareaCompletada,reiniciarTareasCompletadas,eliminarTarea, eliminarTareaCompletada, almacenarTareaCompletada, tarea, tareaOk }) => {
+
+
+
+
+
+
+
+
+
+
+const ListaTareas = ({ noTareaCompletada, reiniciarTareasCompletadas, eliminarTarea, eliminarTareaCompletada, almacenarTareaCompletada, tarea, tareaOk }) => {
+
+
+    
+
+     
+   
+
     return (
 
         <div className='ListaTareas'>
-            <TareasPendientes
-                almacenarTareaCompletada={almacenarTareaCompletada}
-                eliminarTarea={eliminarTarea}
-                tarea={tarea}
-            />
-            <TareasOk
-                eliminarTareaCompletada={eliminarTareaCompletada}
-                noTareaCompletada={noTareaCompletada}    
-                tareaOk={tareaOk}
-            />
+            <div>
+
+                <TareasPendientes
+                    almacenarTareaCompletada={almacenarTareaCompletada}
+                    eliminarTarea={eliminarTarea}
+                    tarea={tarea}
+                />
+                <TareasOk
+                    eliminarTareaCompletada={eliminarTareaCompletada}
+                    noTareaCompletada={noTareaCompletada}
+                    tareaOk={tareaOk}
+                />
+            </div>
             <div className='ListaTareas__servicios'>
                 <p>{tarea.length} items left</p>
-                <div className='ListaTareas__botones'>
-                    <button>All</button>
-                    <button>Active</button>
-                    <button>Complete</button>
+                <div  className='ListaTareas__botones'>
+                    <button className='ListaTareas__hoverNoche'>All</button>
+                    <button className='ListaTareas__hoverNoche'>Active</button>
+                    <button className='ListaTareas__hoverNoche'>Complete</button>
                 </div>
-                <button onClick={()=>reiniciarTareasCompletadas()}>Clear Complete</button>
+                <button onClick={() => reiniciarTareasCompletadas()} className='ListaTareas__hoverDia'>Clear Complete</button>
             </div>
         </div>
     )

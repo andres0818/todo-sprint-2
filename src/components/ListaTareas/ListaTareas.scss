@@ -48,15 +48,15 @@
         font-size: 25px;
         text-align: left;
     }
-
+    
     &__eliminar {
         color: $Very-Dark-Grayish-Blue;
         font-size: 30px;
     }
-
+    
     &__tachado {
         text-decoration: line-through;
-        color: $Light-Grayish-Blue;
+        color: $Dark-Grayish-Blue;
     }
 
     &__servicios {
@@ -64,7 +64,7 @@
         align-items: center;
         justify-content: space-between;
         height: 60px;
-        color: $Very-Dark-Grayish-Blue;
+        color: $Dark-Grayish-Blue;
 
         p {
             cursor: default;
@@ -81,18 +81,21 @@
         background-color: transparent;
         border: none;
         font-size: 16px;
-        color: $Very-Dark-Grayish-Blue;
-        cursor: pointer;
-
-        &:hover {
-            transition: 0.5s;
-            color: $Light-Grayish-Blue-hover;
-        }
+        color:$Dark-Grayish-Blue;
+        cursor: pointer;        
 
         &:focus {
             color: blue;
         }
     }
 
+    &__hoverNoche:hover {
+        transition: 0.5s;
+        color: $Light-Grayish-Blue-hover;
+    }
 
+    &__hoverDia:hover {
+        transition: 0.5s;
+        color: $Very-Dark-Blue;
+    }
 }
